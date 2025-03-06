@@ -19,7 +19,8 @@ Step 4: Verify the Shared Object File
 Ensure that the hello.so file is created in the current directory:
 
 ls -l hello.so
-Step 5: Run the Simulation
+Step 5: use vlog hello.sv for complilling
+Step 6: Run the Simulation
 Use ModelSim (or QuestaSim) to run the simulation with the following command:
 
 vsim -c -do "run -all" hello_world -sv_lib ./hello
