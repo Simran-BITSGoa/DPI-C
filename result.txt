@@ -1,0 +1,29 @@
+[manyadn1@orw-manyadn1-rk ~]$ gcc -m32 -fPIC -shared -o hello.so hello.c
+[manyadn1@orw-manyadn1-rk ~]$ chmod 755 hello.so
+[manyadn1@orw-manyadn1-rk ~]$ vsim -c -do "run -all" hello_world -sv_lib ./hello 
+Reading pref.tcl
+
+# 2025.1:
+
+# vsim -c -do "run -all" hello_world -sv_lib ./hello 
+# Start time: 21:18:21 on Mar 05,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 2025.1 linux Jan 18 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.hello_world(fast)
+# Loading ././hello.so
+# run -all
+# Hello, World!
